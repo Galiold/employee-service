@@ -8,5 +8,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "find-my-way": "^2.1.1",
+    "mongodb": "^3.3.2",
+    "raw-body": "^2.4.1"
+  }
 }
