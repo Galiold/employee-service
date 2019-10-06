@@ -1,4 +1,5 @@
 {
     "files.autoSave": "onFocusChange",
-    "debug.node.autoAttach": "on"
+    "debug.node.autoAttach": "on",
+    "editor.tabSize": 2
 }
