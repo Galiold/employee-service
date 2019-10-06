@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "49a733fd-2cd6-41e2-81ba-9ea75b8b8811",
+		"name": "Employee Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Insert Data",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "org",
+						"type": "text",
+						"value": "PART"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"10\",\n\t\"data\": \"New Employee\",\n\t\"parent\": 20\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/dataService",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"dataService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "org",
+						"type": "text",
+						"value": "PART"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"242sdf243\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/dataService",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"dataService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "org",
+						"type": "text",
+						"value": "PART2"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"60\",\n\t\"data\": {\n\t\t\"desc\": \"test2\"\n\t},\n\t\"parent\": \"ParentEmp\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/dataService",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"dataService"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
